@@ -1,0 +1,17 @@
+#!/usr/bin/python3
+#######################################################################
+#                                                                     #
+# This is an the uninstall script to remove Netinfo to                #
+# eliminate having to do it manually.                                 #
+#                                                                     #
+#######################################################################
+
+import os
+
+# Deletes netinfo from /usr/local/bin and verifies it
+# was sucessfully deleted
+os.system("sudo rm -rf /usr/local/bin/connect")
+if(not (os.path.isfile("/usr/local/bin/connect"))):
+    print("Netinfo uninstalled sucessfully")
+else:
+    print("An error occured")

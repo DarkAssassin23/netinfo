@@ -1,0 +1,1 @@
+@py "%userprofile%\.netinfo\netinfo.py" %*

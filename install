@@ -1,0 +1,22 @@
+#!/usr/bin/python3
+#######################################################################
+#                                                                     #
+# This is an the install script to install Netinfo to                 #
+# eliminate having to do it manually.                                 #
+#                                                                     #
+#######################################################################
+
+import os, platform
+
+print("Making sure the necessary python packages are installed")
+os.system("pip3 install requests")
+if(platform.system == "Linux"):
+    os.system("pip3 install netifaces")
+
+# Copies file to /usr/local/bin then validates the 
+# file copied successfully 
+os.system("sudo cp netinfo.py /usr/local/bin/netinfo && sudo chown -R $(whoami) /usr/local/bin/netinfo && chmod +x /usr/local/bin/netinfo")
+if(os.path.isfile("/usr/local/bin/netinfo")):
+    print("Install Complete")
+else:
+    print("An error occured")
