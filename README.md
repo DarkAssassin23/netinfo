@@ -80,9 +80,9 @@ You will then see an ouput similar to this:
 ```
 Hostname:	        Home-PC
 Local IP:	        192.168.1.63
-Default Gateway:    192.168.1.1
-DNS Servers			1.1.1.1
-					1.0.0.1
+Default Gateway:    	192.168.1.1
+DNS Servers		1.1.1.1
+			1.0.0.1
 Global IP:	        118.9.215.87
 ```
 _________
